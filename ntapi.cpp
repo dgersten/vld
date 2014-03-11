@@ -21,12 +21,17 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
+
+
 #include "stdafx.h"
+
 #define VLDBUILD
+
 #include "ntapi.h"
 
 // Global function pointers for explicit dynamic linking with NT APIs that can't
 // be load-time linked (there is no import library available for these).
+
 LdrLoadDll_t        LdrLoadDll;
 LdrLoadDllWin8_t    LdrLoadDllWin8;
 RtlAllocateHeap_t   RtlAllocateHeap;

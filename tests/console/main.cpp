@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-//  A simple C++ example program for testing the Visual Leak Detector.
+// A simple C++ example program for testing the Visual Leak Detector.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -8,17 +8,18 @@
 #include <string>
 
 // Include Visual Leak Detector
+
 #include <vld.h>
 
 using namespace std;
 
-int main (int argc, char *argv [])
+int main (int argc, char * argv[])
 {
-    string *s = new string("Hello World!\n");
+    string * s = new string ("Hello World!\n");
 
     cout << *s;
 
-    //delete s;
+    // delete s;
 
     return 0;
 }
